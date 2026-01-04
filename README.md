@@ -51,6 +51,7 @@ The field for judgment is shown in the image below. In an environment of 8000m x
 ### 4-2 Near-RT RIC Architecture
 - **Emulator:** Responsible for simulating base station and UE related data.
 - **Handover xApp:** Uses algorithms to analyze and decide whether to perform a handover.
+
 ![Screenshot 2025-12-29 at 12.25.29 PM](https://hackmd.io/_uploads/rkPpGt1V-x.png)
 > The above data is referenced from O-RAN SC.
 > [Official Specifications Website](https://specifications.o-ran.org/specifications)
@@ -137,6 +138,7 @@ After successfully given permissions, the permission list will look like this:
 ./install_RIC.sh
 ```
 - Completion Screen:
+
 ![2025-12-27_09-09](https://hackmd.io/_uploads/Skp6EsJNWl.png)
 
 After completing, check the deployment status of the pods using the following command:
@@ -237,11 +239,15 @@ If you see the following screens, the connection is successful!
 
 :warning: Be sure to take screenshots when successful!
 - **Terminal 1** will display the current situation and whether a handover is needed.
+
 ![image](https://hackmd.io/_uploads/SJ1LA91V-g.png)
 - **Terminal 2**: Check the red box (E2 Setup status) to see if the Emulator is working properly, and the yellow box (RIC Subscription status) to see if the xApp is working properly.
+
 ![success](https://hackmd.io/_uploads/r18m1jyEZg.png)
 - **Terminal 3** will display OK.
+
 ![image](https://hackmd.io/_uploads/rk25ks14Zl.png)
+
 5. Clear ricxapp
 - If you find that you cannot connect or the above two procedures are not completed successfully, please interrupt Terminal 1 and Terminal 2, and use the following command to uninstall the xApp deployment.
 ```shell=1
