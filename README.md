@@ -1,12 +1,12 @@
 # Lab 5: Smart Base Station Control Platform and Mobility Management Experiment
 
 ## Table of Contents
-- [1. Experiment Content](#1.-experiment-content)
-- [2. Related Knowledge](#2.-related-knowledge)
-- [3. Environment and Equipment Specifications](#3.-environment-and-equipment-specifications)
-- [4. Experiment Architecture](#4.-experiment-architecture)
-- [5. xApp Code Explanation](#5.-xapp-code-explanation)
-- [6. Experiment Steps](#6.-experiment-steps)
+- [1. Experiment Content](#1-experiment-content)
+- [2. Related Knowledge](#2-related-knowledge)
+- [3. Environment and Equipment Specifications](#3-environment-and-equipment-specifications)
+- [4. Experiment Architecture](#4-experiment-architecture)
+- [5. xApp Code Explanation](#5-xapp-code-explanation)
+- [6. Experiment Steps](#6-experiment-steps)
 - [7. References](#references)
 
 ## 1. Experiment Content
