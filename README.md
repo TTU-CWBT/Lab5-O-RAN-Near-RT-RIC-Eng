@@ -1,13 +1,13 @@
 # Lab 5: Smart Base Station Control Platform and Mobility Management Experiment
 
 ## Table of Contents
-- [1. Experiment Content](#1.-Experiment-Content)
-- [2. Related Knowledge](#2.-Related-Knowledge)
-- [3. Environment and Equipment Specifications](#3.-Environment-and-Equipment-Specifications)
-- [4. Experiment Architecture](#4.-Experiment-Architecture)
-- [5. xApp Code Explanation](#5.-xApp-Code-Explanation)
-- [6. Experiment Steps](#6.-Experiment-Steps)
-- [7. References](#References)
+- [1. Experiment Content](#1.-experiment-content)
+- [2. Related Knowledge](#2.-related-knowledge)
+- [3. Environment and Equipment Specifications](#3.-environment-and-equipment-specifications)
+- [4. Experiment Architecture](#4.-experiment-architecture)
+- [5. xApp Code Explanation](#5.-xapp-code-explanation)
+- [6. Experiment Steps](#6.-experiment-steps)
+- [7. References](#references)
 
 ## 1. Experiment Content
 This experiment primarily focuses on learning how to set up and deploy the O-RAN RIC, as well as using an xApp and observing the results.
@@ -76,8 +76,6 @@ The Emulator simulates the commuting situation in a Science Park.
 
 ![screenshot_20260104_171726_(region)](https://hackmd.io/_uploads/Hkglq2DV-e.png)
 
-
-
 ## 5. xApp Code Explanation
 ![screenshot_20260104_171411_(region)](https://hackmd.io/_uploads/BJgF5nvVZx.png)
 ![screenshot_20260104_171335_(region)](https://hackmd.io/_uploads/BkJM5nDVWx.png)
@@ -127,6 +125,7 @@ After successfully given permissions, the permission list will look like this:
 ![image](https://hackmd.io/_uploads/Hkh9-fl4be.png)
 
 4. Execute the three shell scripts to install and deploy the necessary pods.
+
 :warning: Please check if the IP in `./install_k8s_and_helm.sh` matches your current computer's IP first. If it is different, please modify it yourself! Otherwise, the installation will fail!
 > You can check the local IP using the `ip a` command.
 > ![image](https://hackmd.io/_uploads/SkVyxbe4-l.png)
@@ -195,6 +194,7 @@ sudo -i
 cd /home/<your username>/Desktop
 ```
 1. Execute the following commands in the third terminal first.
+
 :warning: Please pay attention to the last curl command. In `http://<appmgr IP>:8080/ric/v1/register`, you need to use `watch kubectl get pod -A -o wide` to find the IP of appmgr.
 For example: `http://10.244.0.11:8080/ric/v1/register`
 ```shell=1
@@ -234,6 +234,7 @@ sudo chown $(id -u):$(id -g) ~/.kube/config
 dms_cli install hw-python 1.0.1 ricxapp
 ```
 If you see the following screens, the connection is successful!
+
 :warning: Be sure to take screenshots when successful!
 - **Terminal 1** will display the current situation and whether a handover is needed.
 ![image](https://hackmd.io/_uploads/SJ1LA91V-g.png)
